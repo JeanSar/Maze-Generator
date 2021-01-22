@@ -1,6 +1,4 @@
 
-// On génère ici le labyrinthe en "creusant" dans le tableau map remplis de 0 (de mur) 
-	
 // On utilise ici l'algorithme de Prim "randomizé", un algorithme pour trouver un arbre couvrant de poids minimal 
 // https://en.wikipedia.org/wiki/Prim%27s_algorithm
 // https://en.wikipedia.org/wiki/Maze_generation_algorithm
@@ -44,7 +42,8 @@ function printMap(map) {
 
 function mazeGeneration(map) {
 
-	
+	// On génère ici le labyrinthe en "creusant" dans le tableau map remplis de 0 (de mur) 
+
   let size = map.length - 1;
   
   // retourne un entier aléatoire entre 1 et 28 (et non 0 et 29 car on souhaite que le labyrinthe soit entouré de mur
